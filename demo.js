@@ -7,10 +7,13 @@ const myJson = {
     
   };
   // Using for loop
-  console.log("Using for loop:");
-  for (let key in myJson) {
-    console.log(key, myJson[key]);
-  }
+ 
+    console.log("Using for loop:");
+    const keys = Object.keys(myJson);
+    for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+   console.log(key, myJson[key]);
+   }
   
   // Using for...in loop
   console.log("\nUsing for...in loop:");
